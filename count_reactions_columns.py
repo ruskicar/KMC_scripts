@@ -12,7 +12,7 @@ with open('mechanism_input.dat', 'r') as mechanism:
 				
 with open('general_output.txt', 'r') as file1:
 	for line1 in file1:
-		if line1.startswith('   Elementary step '):	reactions[reactions.index(line1[19:-1])+1]+=1
+		if line1.startswith('   Elementary step '): reactions[reactions.index(line1[19:-1])+1]+=1
 
 for i in range(0,len(reactions)/2):
 	print reactions[::2][i],
