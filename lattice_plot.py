@@ -7,8 +7,8 @@ data = np.genfromtxt('lattice_output.txt')
 fig = plt.figure(figsize=(8,8))                                                               
 ax = fig.add_subplot(1,1,1)
 
-markers = {1: 'o', 2: 'o'}
-marker_colors = {1:'violet', 2:'blue'}
+markers = {1: 'o', 2: 'o', 3: 's', 4: 's'} #for 4 different site types
+marker_colors = {1:'violet', 2:'blue', 3:'orange', 4:'yellow'} #for 4 different site types
 
 ax.set_xscale("linear")
 ax.set_yscale("linear")
